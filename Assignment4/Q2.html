@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Registation form</title>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form action="/login" method="post">
+            <label>Full Name:</label><br>
+            <input type="text" name="Full Name" required><br><br>
+            <label>Email:</label><br>
+            <input type="email" name="email" required><br><br>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label id="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label id="female">Female</label><br>
+            <input type="radio" id="others" name="gender" value="Other">
+            <label if="others">Other</label><br><br>
+            <label for="agegroup">Age:</label><br>
+            <select id="agegroup" name="agegroup" required>
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35-44">35-44</option>
+                <option value="45-54">45-54</option>
+                <option value="55+">55+</option>
+            </select><br><br>
+            <label>Topics of Intrest:</label><br>
+            <input type="checkbox" id="tech" name="topics" value="Technology">
+            <label for="tech">Technology</label><br>
+            <input type="checkbox" if="edu" value="topics" value="Education">
+            <label for="edu">Education</label><br>
+            <input type="checkbox" if="busi" value="topics" value="Bussiness">
+            <label for="busi">Bussiness</label><br>
+            <input type="checkbox" if="hea" value="topics" value="Health">
+            <label for="hea">Health</label><br><br>
+            <label for="comments">Additional Comments:</label><br>
+            <textarea id="comments" rows="4" placeholder="Enter your comments here...."></textarea><br><br>
+            <button type="submit">Register</button>
+        </form>
+    </body>
+</html>
