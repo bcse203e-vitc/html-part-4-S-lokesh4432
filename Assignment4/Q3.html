@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Feedback </title>
+    </head>
+    <body>
+        <h1>Feedback Form</h1>
+        <form action="#" method="post">
+            <label for="n">Name:</label><br>
+            <input type="text" id="name" required><br><br>
+            <label for="mail" >Email:</label><br>
+            <input type="text" id="mail" name="mail " required><br><br>
+            <label id="rate" >Rate the website:</label><br>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1" >1 star</label><br>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">2 star</label><br>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">3 star</label><br>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">4 star</label><br>
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">5 star</label><br><br>
+
+            <label for="feedt" >Type of Feedback</label><br>
+            <select id="feedt" name="feedt" required>
+                <option for="suggestion">Sugestion</option><br>
+                <option for="bug-report">Bug Report</option><br>
+                <option for="compliment">Compliment</option><br>
+            </select><br><br>
+
+            <label for="feed">Feedback:</label><br>
+            <textarea id="feed" name="feed" rows="5" col="30"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </body>
+</html>

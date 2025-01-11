@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>health survey</title>
+    </head>
+    <body>
+        <h1>Health Survey Form</h1>
+        <form action="survey" method="post">
+            <label for="k">Name:</label><br>
+            <input type="text" id="k"><br><br>
+
+            <label for="p">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="oth" name="gender" value="Others">
+            <label for="oth">Other</label><br><br>
+
+            <label for="i">Height:</label><br>
+            <input type="text" id="i"><br><br>
+
+            <label for="o">Weight:</label><br>
+            <input type="text" id="o"><br><br>
+
+            <label>Lifestyle Questions:</label><br>
+            <input type="checkbox" id="smoking" name="lifestyle" value="Smoking">
+            <label for="smoking">Smoking</label><br>
+            <input type="checkbox" id="alcohol" name="lifestyle" value="Alcohol Consumption">
+            <label for="alcohol">Alcohol Consumption</label><br>
+            <input type="checkbox" id="exercise" name="lifestyle" value="Regular Exercise">
+            <label for="exercise">Regular Exercise</label><br>
+            <input type="checkbox" id="healthy-diet" name="lifestyle" value="Healthy Diet">
+            <label for="healthy-diet">Healthy Diet</label><br><br>
+ 
+            <label for="diet">Dietary Preference:</label><br>
+            <select id="diet" name="diet" required>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Non-Vegetarian">Non-Vegetarian</option>
+                <option value="Vegan">Vegan</option>
+            </select><br><br>
+
+            <label>Health Optional:</label><br>
+            <textarea placeholder="enter something"></textarea><br><br>
+            <button type="submit">Submit</button>
+
+
+        </form>
+    </body>
+</html>
